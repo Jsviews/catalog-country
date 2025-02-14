@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import CountryList from '@/components/CountryList.vue'
+</script>
 
 <template>
-  <main>
-    <h1>Hello from HomeView</h1>
-  </main>
+  <div>
+    <CountryList />
+  </div>
 </template>
