@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Country } from '@/stores/countryStore'
+import type { Country } from '@/utils/types'
 import Button from './ui/button/Button.vue'
 
 interface Props {

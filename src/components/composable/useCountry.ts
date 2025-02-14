@@ -1,5 +1,5 @@
 import { apiServices } from '@/services'
-import type { Country } from '@/stores/countryStore'
+import type { Country } from '@/utils/types'
 
 export const useCountry = () => {
   async function fetchCountries(): Promise<Country[]> {

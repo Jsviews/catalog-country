@@ -1,34 +1,8 @@
 import { defineStore } from 'pinia'
 import { useCountry } from '@/components/composable/useCountry'
+import type { Country, CountryState } from '@/utils/types'
 
 const { fetchCountries } = useCountry()
-export interface Country {
-  name: {
-    official: string
-    nativeName?: Record<string, { common: string }>
-  }
-  cca2: string
-  cca3: string
-  altSpellings: string[]
-  idd?: {
-    root: string
-    suffixes?: string[]
-  }
-  flags: {
-    png: string
-  }
-}
-
-export interface CountryState {
-  countries: Country[]
-  searchQuery: string
-  sortAscending: boolean
-  selectedCountry: Country | null
-  currentPage: number
-  totalPages: number
-  itemsPerPage: number
-  filteredCountries: Country[]
-}
 
 export const useCountryStore = defineStore('coutryStore', {
   state: (): CountryState => ({
