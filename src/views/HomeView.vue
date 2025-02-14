@@ -3,7 +3,7 @@ import CountryList from '@/components/CountryList.vue'
 </script>
 
 <template>
-  <div>
+  <div class="mx-10">
     <CountryList />
   </div>
 </template>
